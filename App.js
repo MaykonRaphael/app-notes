@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
+import { StatusBar } from 'expo-status-bar';
 import {
     SafeAreaView,
     StyleSheet,
@@ -45,14 +45,14 @@ export default function App() {
     if(estado == 'leitura'){
         return (
             <>
-            <StatusBar hidden/>
+            <StatusBar style='light' />
             <SafeAreaView style={{flex:0, backgroundColor: statusBarColor}}/>
             <SafeAreaView style={styles.container}>
                 <View style={styles.container}>
                     <View style={styles.header}>
                         
                         <Text style={styles.text}>
-                            Aplicativo Anotacao
+                            Aplicativo Anotação
                         </Text>
 
                     </View>
@@ -68,7 +68,7 @@ export default function App() {
                         :
                         <View style={{padding: 20}}>
                             <Text style={{opacity:0.3}}>
-                                Nenhuma Anotacao encontrada 😞
+                                Nenhuma Anotação encontrada 😞
                             </Text>
                         </View>
                     }
